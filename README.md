@@ -17,14 +17,26 @@ Set a variable to be used in the ```docker run``` command.
 MY_LOCAL_FOLDER=${HOME}/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/polkadot-substrate-docker-volume;  
 ```
   
-Let's run this:
+This will create and start up a local docker node for HTTP only:
 ```
 sudo docker run -d \
     --cpus="0.5" \
-    --memory="512m" \
-    --name "MyPolkadotContainer"  \
+    --memory="1024m" \
+    --name "MyLocalPolkaDockerHttpNode"  \
     -p 9933:9933 \
+    -v ${MY_LOCAL_FOLDER}:/polkadot \
+    parity/polkadot:latest \
+    --rpc-external
+```
+
+This will create and start up a local docker node for WS only:
+```
+sudo docker run -d \
+    --cpus="0.5" \
+    --memory="1024m" \
+    --name "MyLocalPolkaDockerWsNode"  \
     -p 9944:9944 \
     -v ${MY_LOCAL_FOLDER}:/polkadot \
-    parity/polkadot:latest
+    parity/polkadot:latest \
+    --ws-external```
 ```
