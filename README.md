@@ -38,7 +38,7 @@ sudo docker run -d \
     -p 9944:9944 \
     -v ${MY_LOCAL_FOLDER}:/polkadot \
     parity/polkadot:latest \
-    --ws-external```
+    --ws-external
 ```
   
   
