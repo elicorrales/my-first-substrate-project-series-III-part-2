@@ -3,10 +3,16 @@
 # We Are Going To Run a Local Node Using Docker  
   
 We need a local ```volume``` for the polkadot docker container.  
+```
+mkdir -p ${HOME}/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/polkadot-substrate-docker-volume;
+```
+  
+Set a variable to be used in the ```docker run``` command.  
 ```  
 MY_LOCAL_FOLDER=${HOME}/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/polkadot-substrate-docker-volume;  
 ```
   
+Let's run this:
 ```
 sudo docker run -d \
     --cpus="0.5" \
