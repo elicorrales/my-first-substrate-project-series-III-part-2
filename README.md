@@ -7,6 +7,7 @@
 Caviat: (2022-07-24) I was not able to get the daemon to start in Ubuntu 22.04, and when installing and trying to ```sudo apt update``` Ubuntu 21.04, there was a release repositories issue, so I punted back to Ubuntu 20.04
 <br/>
 
+## Prep
 We need a local ```volume``` for the polkadot docker container.  
 ```
 mkdir -p ${HOME}/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/polkadot-substrate-docker-volume;
@@ -27,6 +28,12 @@ OUTPUT:
 sudo service docker start
  * Starting Docker: docker
 ```
+  
+If you already have portainer install on docker, point a browser to either the HTTP(8000) or HTTPS(9443) port and you'll see the portainer start-page.  
+Go to ```Containers```.  
+  
+
+## Install The Node  
   
 This will create and start up a local docker node for HTTP only:
 ```
