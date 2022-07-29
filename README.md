@@ -17,6 +17,17 @@ Set a variable to be used in the ```docker run``` command.
 MY_LOCAL_FOLDER=${HOME}/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/polkadot-substrate-docker-volume;  
 ```
   
+THEN DO:
+```
+sudo service docker start
+```
+  
+OUTPUT:  
+```
+sudo service docker start
+ * Starting Docker: docker
+```
+  
 This will create and start up a local docker node for HTTP only:
 ```
 sudo docker run -d \
