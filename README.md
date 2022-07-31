@@ -60,3 +60,7 @@ sudo docker run -d \
 ```
   
   
+## Run the Command-line Javascript Client  
+  
+Please see [Part 1](https://github.com/elicorrales/my-first-substrate-project-series-III-part-1/blob/main/README.md) for helpful details.
+  
