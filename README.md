@@ -1,5 +1,11 @@
 # my-first-substrate-project-series-III-part-2
 
+### This project is part of a series and includes a video.
+
+See [Here](https://github.com/elicorrales/blockchain-tutorials/blob/main/README.md) for the overall document that
+refers to all the series.  
+  
+
 # We Are Going To Run a Local Node Using Docker  
   
 [Here](https://github.com/elicorrales/blockchain-tutorials/blob/main/How-To-Setup-Docker-WSL-Ubuntu.md) is how to setup Docker (engine) only on WSL Ubuntu without using/installing Docker Desktop.  
